@@ -13,7 +13,7 @@ function actorPanel(person, age) {
     html = ` <div class="row p-4">
           
     <!-- 1 kolumna cechy wyglądu -->
-    <div class="col ">
+    <div class="col">
       <div class="box2 bg-dark">
         <img class="img" src="`+person.DefaultPictureFileName+`" alt="">
       </div>
