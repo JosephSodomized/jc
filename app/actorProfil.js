@@ -10,14 +10,14 @@ function actorPanel(person, age) {
    
     actorAge(person.DateOfBirdth);
 
-    html = ` <div class="row p-4">
+    html = ` <div class="row pt-4 px-4">
           
     <!-- 1 kolumna cechy wyglądu -->
     <div class="col">
       <div class="box2 bg-dark">
         <img class="img" src="`+person.DefaultPictureFileName+`" alt="">
       </div>
-      <div class="col">
+      <div>
         <!-- cechy wyglądu -->
         <div class="row p-1">
           <div class="col">
@@ -251,7 +251,7 @@ function actorPanel(person, age) {
     </div>
     
     <!-- 3 kolumna -->
-    <div class="col ">
+    <div class="col">
       <!-- wiek i ocena -->
       <div class="row p-1">
         <div class="col">
@@ -398,11 +398,20 @@ function actorPanel(person, age) {
           </div>
         </div>
       </div>
+      <!-- Obecne zajęcie -->
+      <div class="row p-1">
+          <div class="col">
+            <label style="font-size:10px;" for="actual_hobby">Obecne zajęcie</label>
+            <div class="input-group input-group-sm">
+              <textarea class="form-control" name="" id="actual_hobby" rows="3">`+person.CurrentJobInfo+`</textarea>
+            </div>
+          </div>
+        </div>
 
     </div>
 
     <!-- 4 kolumna -->
-    <div class="col ">
+    <div class="col">
       <div class="row p-1">
           <div class="col">
               <label style="font-size:10px;" for="status">Status</label>
@@ -486,15 +495,6 @@ function actorPanel(person, age) {
             <label style="font-size:10px;" for="hobby">Hobby</label>
             <div class="input-group input-group-sm">
               <textarea class="form-control" name="" id="hobby" rows="3"></textarea>
-            </div>
-          </div>
-        </div>
-         <!-- Obecne zajęcie -->
-      <div class="row p-1">
-          <div class="col">
-            <label style="font-size:10px;" for="actual_hobby">Obecne zajęcie</label>
-            <div class="input-group input-group-sm">
-              <textarea class="form-control" name="" id="actual_hobby" rows="3">`+person.CurrentJobInfo+`</textarea>
             </div>
           </div>
         </div>
