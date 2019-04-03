@@ -46,3 +46,38 @@ body{
 .background{
     background-color: #f3f3f3
 }
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #2e2e2e;
+    height: 95vh;
+}
+
+.list-group-item{
+    background-color: 2e2e2e;
+}
+
+.list-group-item a{
+    color: rgb(255, 255, 255);
+}
+
+.selected{
+    color: aquamarine;
+}
+
+.sidebar .nav-item a{
+    color: #f3f3f3;
+    font-size: 13px;
+}
+
+.sidebar .nav-item a:hover{
+    color: #3dfa24;
+}
+
+
