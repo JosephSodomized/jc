@@ -1,0 +1,47 @@
+@font-face{
+    font-family: 'hinted-CheyenneSans-Light';
+    src: url("../fonts/hinted-CheyenneSans-Light.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face{
+    font-family: 'hinted-CheyenneSans-ExtraLight';
+    src: url("../fonts/hinted-CheyenneSans-ExtraLight.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face{
+    font-family: 'hinted-CheyenneSans-Medium';
+    src: url("../fonts/hinted-CheyenneSans-Medium.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+
+body{
+    background-color: #515151;
+    font-family: 'hinted-CheyenneSans-ExtraLight';
+}
+
+.navbar-custom{
+    background-color: #393939;
+}
+
+#main{
+    width: 95%;
+    margin: 2% auto;
+}
+
+.title-txt{
+    font-size: 20px;
+}
+
+.big-title-txt{
+    font-size: 25px;
+    color: #c4c4c4;
+    font-family: 'hinted-CheyenneSans-Light';
+}
+
+.background{
+    background-color: #f3f3f3
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/actor-list.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>JustCast</title>
+</head>
+
+<body>
+  <!-- Page Content -->
+  <nav class="navbar navbar-custom">
+    <button class="btn btn-light btn-sm ml-auto">Wyloguj</button>
+  </nav>
+  <main class="" id="main">
+    <div class="title-txt pb-2 text-white"><span>Aktorzy</span><a href="../index.html"><button
+          class="btn btn-success btn-sm float-right">Powrót do strony głównej</button></a></div>
+    <div class="container-fluid background">
+      <!-- Wyszukiwarka -->
+      <div id="wyszukiwarka">
+        <div class="row p-3">
+          <div class="col-6">
+            <label for="actor-name">Wyszukaj aktora</label>
+            <div class="input-group input-group-lg">
+              <input class="form-control" id="actor-name" type="text" placeholder="Wpisz imię aktora...">
+            </div>
+            <span class="badge badge-pill badge-danger">Polska&nbsp;&nbsp;<i class="fas fa-times-circle"></i></span>
+            <span class="badge badge-pill badge-danger">Podrywacz&nbsp;&nbsp;<i class="fas fa-times-circle"></i></span>
+            <span class="badge badge-pill badge-danger">Niebieskie oczy&nbsp;&nbsp;<i
+                class="fas fa-times-circle"></i></span>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-sm-3 ">
+                <label for="age">Wiek</label>
+                <div class="input-group input-group-md">
+                  <input class="form-control age text-center" type="text" placeholder="od">
+                  <input class="form-control age text-center" type="text" placeholder="do">
+                </div>
+
+              </div>
+              <div class="col-sm-3 ">
+                <label for="cast-id">Casting ID</label>
+                <div class="input-group input-group-md">
+                  <input class="form-control text-center" type="text" placeholder="od">
+                  <input class="form-control text-center" type="text" placeholder="do">
+                </div>
+
+              </div>
+              <div class="col-sm-3 ">
+                <label for="sex">Płeć</label>
+                <div class="input-group input-group-md">
+                  <select class="custom-select" name="" id="sex">
+                    <option value="men">Męzczyzna</option>
+                    <option value="men">Kobieta</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="col-sm-3 ">
+                <label for="actor">Ocena aktorska</label>
+                <div class="input-group input-group-md">
+                  <input class="form-control text-center" type="text" placeholder="od">
+                  <input class="form-control text-center" type="text" placeholder="do">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3 ">
+                <label for="phone">Telefon</label>
+                <div class="input-group input-group-md">
+                  <input class="form-control" id="phone" type="text">
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <label for="town">Miasto</label>
+                <div class="input-group input-group-md">
+                  <input class="form-control" id="town" type="text">
+                </div>
+              </div>
+
+              <div class="col-sm-3 ">
+                <label for="state">Województwo</label>
+                <div class="input-group input-group-md">
+                  <input class="form-control" id="state" type="text">
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-3 ">
+                <label for="btn"></label>
+                <div class="input-group input-group-md">
+                  <button class="btn btn-success btn-md ml-auto">Szukaj</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wyniki -->
+      <div class="py-3" id="results">
+        <div id='mainContainer'>
+      </div>
+      <div id='mainContainer'>
+          <div class="row">
+            <div class="col">
+              <ul class="list-group">
+                <!-- Wyniki 1-->
+                <a href="../layouts/actor.html" class="list-group-item-action actor-box my-1">
+                  <div class="row mx-0">
+                    <div class="bg-dark box">
+                      <img class="img" src="../img/people.jpg" alt="">
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;"> Mike Labowsky</span></div>
+                      <div class="row">telefon: 666-898-098</div>
+                      <div class="row">adres: ul.Racławicka</div>
+                      <div class="row pt-2"><span>Uwagi: spóźnia się na castingi</span></div>
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;">21 lat
+                          <div class="rating">
+                            <i id="minStar1" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar2" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar3" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar4" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar5" class="fa fa-star fa-md" aria-hidden="true"></i>
+                          </div>
+                        </span></div>
+                      <div class="row">email: mike.big@gmail.com</div>
+                    </div>
+                    <div class="col-3 mx-2">
+                      <div class="row py-2">
+                        <span style="font-size: 17px;">Casting Id: 1265721</div>
+                    </div>
+                    <div class="col mx-2">
+                      <div class="row">
+                        &nbsp;
+                      </div>
+                      <div class="row">
+                        &nbsp;
+                      </div>
+                      <div class="row">
+                        &nbsp;
+                      </div>
+                      <div class="row p-3 float-right">
+                        <i class="icon2 history"></i>
+                      </div>
+  
+  
+                    </div>
+                  </div>
+  
+                </a>
+                <!-- Wyniki 2-->
+                <a href="../layouts/actor.html" class="list-group-item-action actor-box my-1">
+                  <div class="row  mx-0">
+                    <div class="bg-dark box">
+                      <img class="img" src="../img/people2.jpg" alt="">
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;"> Jessica Mort</span></div>
+                      <div class="row">telefon: 666-898-098</div>
+                      <div class="row">adres: ul.Racławicka</div>
+                      <div class="row pt-2"><span>Uwagi: spóźnia się na castingi</span></div>
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;">21 lat
+                          <div class="rating">
+  
+                            <i id="minStar1" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar2" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar3" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar4" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar5" class="fa fa-star fa-md" aria-hidden="true"></i>
+                          </div>
+                        </span></div>
+                      <div class="row">email: mike.big@gmail.com</div>
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2">
+                        <span style="font-size: 17px;">Casting Id: 1265721</div>
+                    </div>
+                  </div>
+  
+                </a>
+                <!-- Wyniki 3-->
+                <a href="../layouts/actor.html" class="list-group-item-action actor-box my-1">
+                  <div class="row  mx-0">
+                    <div class="bg-dark box">
+                      <img class="img" src="../img/people3.jpg" alt="">
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;"> Pauline Check</span></div>
+                      <div class="row">telefon: 666-898-098</div>
+                      <div class="row">adres: ul.Racławicka</div>
+                      <div class="row pt-2"><span>Uwagi: spóźnia się na castingi</span></div>
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;">21 lat
+                          <div class="rating">
+  
+                            <i id="minStar1" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar2" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar3" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar4" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar5" class="fa fa-star fa-md" aria-hidden="true"></i>
+                          </div>
+                        </span></div>
+                      <div class="row">email: mike.big@gmail.com</div>
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2">
+                        <span style="font-size: 17px;">Casting Id: 1265721</div>
+                    </div>
+                  </div>
+  
+                </a>
+                <!-- Wyniki 4-->
+                <a href="../layouts/actor.html" class="list-group-item-action actor-box my-1">
+                  <div class="row  mx-0">
+                    <div class="bg-dark box">
+                      <img class="img" src="../img/people.jpg" alt="">
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;"> Mike Labowsky</span></div>
+                      <div class="row">telefon: 666-898-098</div>
+                      <div class="row">adres: ul.Racławicka</div>
+                      <div class="row pt-2"><span>Uwagi: spóźnia się na castingi</span></div>
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2"><span style="font-size: 17px;">21 lat
+                          <div class="rating">
+  
+                            <i id="minStar1" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar2" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar3" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar4" class="fa fa-star fa-md" aria-hidden="true"></i>
+                            <i id="minStar5" class="fa fa-star fa-md" aria-hidden="true"></i>
+                          </div>
+                        </span></div>
+                      <div class="row">email: mike.big@gmail.com</div>
+                    </div>
+                    <div class="col-2 mx-2">
+                      <div class="row py-2">
+                        <span style="font-size: 17px;">Casting Id: 1265721</div>
+                    </div>
+                  </div>
+  
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="">
+        <ul class="pagination pagination-sm justify-content-center p-2">
+          <li class="page-item">
+            <a class="page-link bg-secondary text-white" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link bg-secondary text-white" href="#">1</a></li>
+          <li class="page-item"><a class="page-link bg-secondary text-white" href="#">2</a></li>
+          <li class="page-item"><a class="page-link bg-secondary text-white" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link bg-secondary text-white" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="../app/actorList.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+.icon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon2{
+    width: 25px;
+    height: 25px;
+}
+
+.filled-star{
+    background: url('../img/callender.svg');
+}
+
+.history{
+    background: url('../img/historia_ang.svg');
+}
+
+.btn-lg {
+    width: 200px;
+    height: 135px;
+}
