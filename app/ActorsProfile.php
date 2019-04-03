@@ -26,7 +26,7 @@
 "RODOStatusDVID":"1",
 "RODOStatusName":"Zgoda udzielona",
 "MediaRightsGranted":"1",
-"DefaultPictureFileName":"img/people.jpg",
+"DefaultPictureFileName":"../img/people.jpg",
 "ExternalMediaLinks":"http://aden.pl",
 "ActorCategoriesAgregation":"punk,świr,nieboszczyk",
 "Canceled":"0",

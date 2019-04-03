@@ -1,5 +1,5 @@
 $.getJSON("../app/Actors.php", function (data) {
-  //   $.getJSON( "http://aden.pl/projects/just-cast/API/Actors.php", function(data) {
+    // $.getJSON( "http://aden.pl/projects/just-cast/API/Actors.php", function(data) {
 
 
   data.actors.forEach(function (actor) {

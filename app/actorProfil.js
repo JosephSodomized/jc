@@ -14,8 +14,8 @@ function actorPanel(person, age) {
           
     <!-- 1 kolumna cechy wyglądu -->
     <div class="col ">
-      <div class="box2">
-        <img class="img mx-auto" src="`+person.DefaultPictureFileName+`" alt="">
+      <div class="box2 bg-dark">
+        <img class="img" src="`+person.DefaultPictureFileName+`" alt="">
       </div>
       <div class="col">
         <!-- cechy wyglądu -->
