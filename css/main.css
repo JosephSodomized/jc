@@ -47,16 +47,13 @@ body{
     background-color: #f3f3f3
 }
 
-.wrapper {
-    display: flex;
-    align-items: stretch;
-}
 
 .sidebar {
     min-width: 250px;
     max-width: 250px;
     background-color: #2e2e2e;
-    height: 95vh;
+    min-height: 95vh;
+    height: auto;
 }
 
 .list-group-item{
@@ -78,6 +75,12 @@ body{
 
 .sidebar .nav-item a:hover{
     color: #3dfa24;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }
 
 

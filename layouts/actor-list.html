@@ -13,15 +13,34 @@
   <link rel="stylesheet" type="text/css" href="../css/icons.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
   <title>JustCast</title>
 </head>
 
 <body>
   <!-- Page Content -->
   <nav class="navbar navbar-custom">
-    <button class="btn btn-light btn-sm ml-auto">Wyloguj</button>
-  </nav>
-  <main class="" id="main">
+      <a class="" href="#">
+          <img class="logo" src="../img/new-logo-look.png" width="150" height="150" style="position: absolute; top: -20px; z-index: 1;" alt="">
+        </a>
+      <button class="btn btn-light btn-sm ml-auto">Wyloguj</button>
+    </nav>
+    <div class="wrapper">
+      <ul class="nav flex-column sidebar text-right">
+          <li class="nav-item mt-5 p-1">
+            <a class="nav-link active" href="./actor-list.html">Aktorzy</a>
+          </li>
+          <li class="nav-item p-1">
+            <a class="nav-link" href="#">Zlecenia</a>
+          </li>
+          <li class="nav-item p-1">
+            <a class="nav-link" href="#">Klienci</a>
+          </li>
+          <li class="nav-item p-1">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Panel administracyjny</a>
+          </li>
+        </ul>
+  <main class="m-5" id="main">
     <div class="title-txt pb-2 text-white"><span>Aktorzy</span><a href="../index.html"><button
           class="btn btn-success btn-sm float-right">Powrót do strony głównej</button></a></div>
     <div class="container-fluid background">
@@ -138,6 +157,7 @@
         </ul>
       </nav>
   </main>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -148,7 +168,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="../app/actorList.js"></script>
-
+  <script src="../app/main.js"></script>
+  <script src="../jquery/jquery.js"></script>
+  <script src="../jquery/jquery-ui.min.js"></script>
 </body>
 
 </html>
