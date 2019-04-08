@@ -567,8 +567,8 @@ function actorAge(DOB) {
 }
 
 window.addEventListener('load', function(){
-  var addCommentButton =  document.getElementsByClassName("add_comment")[0];
-  var gradeComments =  document.getElementsByClassName("grade_comments")[0];
+  var addCommentButton =  document.querySelector(".add_comment");
+  var gradeComments =  document.querySelector(".grade_comments");
   addCommentButton.addEventListener('click', showComments);
 
   function showComments(){
