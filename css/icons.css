@@ -18,6 +18,10 @@
     background: url('../img/historia_ang.svg');
 }
 
+.close-btn{
+    background: url('../img/close_button.svg');
+}
+
 .btn-lg {
     width: 200px;
     height: 135px;

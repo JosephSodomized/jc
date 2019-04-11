@@ -45,3 +45,23 @@
 .padding{
     padding-top: 8px;
 }
+
+.fa-ellipsis-h{
+    color: black;
+    margin-right: 20px;
+}
+
+.contener{
+    position: relative;
+    display: inline-block;
+}
+
+.close-btn{
+    position: absolute;
+    top: -8%;
+    left: 88%;
+}
+
+.close-btn:hover{
+    background: url('../img/close_button_dark.svg');
+}

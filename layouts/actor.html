@@ -14,135 +14,175 @@
   <link rel="stylesheet" type="text/css" href="../css/icons.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
+  <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
   <title>JustCast</title>
 </head>
 
 <body>
   <!-- Page Content -->
-  
+
   <nav class="navbar navbar-custom">
-      <a class="" href="#">
-          <img class="logo" src="../img/new-logo-look.png" width="130" height="130" style="position: absolute; top: -20px; left: 0px; z-index: 1;" alt="">
-        </a>
-      <button class="btn btn-light btn-sm ml-auto">Wyloguj</button>
-    </nav>
-    <div class="wrapper">
-      <ul class="nav flex-column sidebar text-right">
-          <li class="nav-item mt-5 p-1">
-            <a class="nav-link active" href="./actor-list.html">Aktorzy</a>
-          </li>
-          <li class="nav-item p-1">
-            <a class="nav-link" href="#">Zlecenia</a>
-          </li>
-          <li class="nav-item p-1">
-            <a class="nav-link" href="#">Klienci</a>
-          </li>
-          <li class="nav-item p-1">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Panel administracyjny</a>
-          </li>
-        </ul>
-  <main class="m-4" id="main">
-    <div class="title-txt pb-2 text-white"><span>Aktorzy</span><a href="./actor-list.html"><button
-          class="btn btn-success btn-sm float-right">Powrót do listy aktorów</button></a></div>
-    <div class="container-fluid background">
-      <!-- Wyszukiwarka -->
-      <div id="aktor">
+    <a class="" href="#">
+      <img class="logo" src="../img/new-logo-look.png" width="130" height="130"
+        style="position: absolute; top: -20px; left: 0px; z-index: 1;" alt="">
+    </a>
+    <button class="btn btn-light btn-sm ml-auto">Wyloguj</button>
+  </nav>
+  <div class="wrapper">
+    <ul class="nav flex-column sidebar text-right">
+      <li class="nav-item mt-5 p-1">
+        <a class="nav-link active" href="./actor-list.html">Aktorzy</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link" href="#">Zlecenia</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link" href="#">Klienci</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Panel administracyjny</a>
+      </li>
+    </ul>
+    <main class="m-4" id="main">
+      <div class="title-txt pb-2 text-white"><span>Aktorzy</span><a href="./actor-list.html"><button
+            class="btn btn-success btn-sm float-right">Powrót do listy aktorów</button></a></div>
+      <div class="container-fluid background">
+        <!-- Wyszukiwarka -->
+        <div id="aktor">
 
-      </div>
-      <!-- line -->
-      <div class="row">
-        <div class="col">
-          <span class="line2" style="font-size:13px;">&nbsp;</span>
         </div>
-      </div>
-      <!-- galeria -->
-      <div class="section2">
-      <div class="row py-2">
-        <div class="col">
-          <label for="img-gallery">Galeria (56) <i class="fas fa-caret-down galery"></i></label>
-          <div id="img-gallery" class="text-left" style="display:none">
-            <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
-            <button class="btn custom-btn btn-lg text-center p-0"><span style="font-size: 90px;">+</span></button>
 
+        <!-- galeria -->
+        <div class="section2 px-2">
+          <div class="row py-2">
+            <div class="col">
+              <label for="img-gallery">Galeria (56) <i class="fas fa-caret-down galery"></i></label>
+              <div id="img-gallery" class="text-left py-2" style="display:none">
+                <div class="contener">
+                  <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn "></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn "></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn "></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn"></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people3.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn"></i></div>
+                </div>
+                <button class="btn custom-btn btn-lg text-center p-0"><span style="font-size: 90px;">+</span></button>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- filmy -->
+          <div class="row py-2">
+            <div class="col">
+              <label for="movie-gallery">Filmy (36) <i class="fas fa-caret-down movie-arrow"></i></label>
+              <div id="movie-gallery" class="text-left py-2" style="display:none">
+                <div class="contener">
+                  <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn "></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn "></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn "></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn"></i></div>
+                </div>
+                <div class="contener">
+                  <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
+                  <div class="close-btn"><i class="icon close-btn"></i></div>
+                </div>
+            
+                <button class="btn custom-btn btn-lg text-center p-0"><span style="font-size: 90px;">+</span></button>
+                <div class="input-group input-group-sm pt-1 py-2" style="width:300px;">
+                  <input type="text" class="form-control link-input" placeholder="dodaj link...">
+                  <div class="input-group-append">
+                    <button class="btn btn-success btn-sm add_link_btn">Dodaj</button>
+                  </div>
+                </div>
+                <div class="link py-2 w-50">
+                  Linki:
+                <ul class="list-group list-group-flush link-group">
+                </ul>
+              </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- Historia anagay -->
+          <div class="row py-2 pb-4">
+            <div class="col">
+              <label for="history">Historia angazy <i class="fas fa-caret-down history-arrow"></i></label>
+              <div class="table-responsive">
+                <table id="history" class="table" style="display:none">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">ID zlecenia</th>
+                      <th scope="col">Nazwa zlecenia</th>
+                      <th scope="col">Klient</th>
+                      <th scope="col">Rola</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Data zmiany statusu</th>
+                      <th scope="col">Prowadzący</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">xs2123</th>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">xs2123</th>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">xs2123</th>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                      <td>Lorem</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- filmy -->
-      <div class="row py-2">
-        <div class="col">
-          <label for="movie-gallery">Filmy (36) <i class="fas fa-caret-down movie-arrow"></i></label>
-          <div id="movie-gallery" class="text-left" style="display:none">
-            <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
-            <img src="../img/people2.jpg" class="img-thumbnail img2" alt="">
-            <button class="btn custom-btn btn-lg text-center p-0"><span style="font-size: 90px;">+</span></button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Historia anagay -->
-      <div class="row py-2">
-        <div class="col">
-          <label for="history">Historia angazy <i class="fas fa-caret-down history-arrow"></i></label>
-          <div class="table-responsive">
-            <table id="history" class="table" style="display:none">
-              <thead class="thead-light">
-                <tr>
-                  <th scope="col">ID zlecenia</th>
-                  <th scope="col">Nazwa zlecenia</th>
-                  <th scope="col">Klient</th>
-                  <th scope="col">Rola</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Data zmiany statusu</th>
-                  <th scope="col">Prowadzący</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">xs2123</th>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <th scope="row">xs2123</th>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <th scope="row">xs2123</th>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-  </main>
-</div>
+    </main>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
