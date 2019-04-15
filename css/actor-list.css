@@ -15,6 +15,10 @@ label{
     background-color: #cfcfcf;
 }
 
+#wyszukiwarka a{
+    color: #b6b6b6;
+}
+
 .box{
     width: 170px;
     height: 120px; 
@@ -41,7 +45,6 @@ label{
 }
 
 .list-group-item{
-    width: 95%;
     margin: 0 auto;
     font-size: 12px;
 }

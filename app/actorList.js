@@ -50,7 +50,7 @@ function actorResult(person) {
                       &nbsp;
                     </div>
                     <div class="row p-3 float-right">
-                      <i class="icon2 history"></i>
+                      <i class="icon2 history mt-3"></i>
                     </div>
 
 

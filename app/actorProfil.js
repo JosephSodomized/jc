@@ -642,24 +642,24 @@ linkBox.style.display = 'none';
 
 function addLink(e) {
   if (linkInput.value !== '') {
-  linkBox.style.display = 'block';
-  const li = document.createElement('li');
-  li.className = 'list-group-item mx-0';
-  li.appendChild(document.createTextNode(linkInput.value));
+    linkBox.style.display = 'block';
+    const li = document.createElement('li');
+    li.className = 'list-group-item mx-0 my-1 p-1';
+    li.appendChild(document.createTextNode(linkInput.value));
 
-  const del = document.createElement('a');
-  del.className="float-right delete-item";
-  del.innerHTML = '<i class="far fa-times-circle"></i>';
-  li.appendChild(del);
+    const del = document.createElement('a');
+    del.className = "float-right delete-item";
+    del.innerHTML = '<i class="fas fa-times-circle px-1"></i>';
+    li.appendChild(del);
 
-  linkGroup.appendChild(li);
-  linkArr(linkInput.value);
+    linkGroup.appendChild(li);
+    linkArr(linkInput.value);
 
-  linkInput.value = '';
+    linkInput.value = '';
 
-  e.preventDefault();
+    e.preventDefault();
   }
-  else{
+  else {
     alert("Dodaj link");
   }
 }
@@ -671,14 +671,18 @@ const linkArr = (arr) => {
   console.log(linkArray);
 }
 
-function removeLink(e){
-  if(e.target.parentElement.classList.contains('delete-item')){
+function removeLink(e) {
+  if (e.target.parentElement.classList.contains('delete-item')) {
     e.target.parentElement.parentElement.remove();
 
     //jeśli 0 to usuwa 'link'
     console.log(linkGroup.children.length);
-    if(linkGroup.children.length == 0){
+    if (linkGroup.children.length == 0) {
       linkBox.style.display = 'none';
     }
+  }
 }
-}
+
+$('far fa-times-circle').hover(function () {
+  $(this).fadeOut(1000);
+});
